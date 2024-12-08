@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function ErrorPage() {
   return (
     <div className="min-h-screen bg-white">
-
       {/* Error Message Section */}
       <section className="p-10 relative bg-black pt-36 flex flex-col items-center">
         <div className="w-full max-w-[630px] text-center">
@@ -17,7 +16,7 @@ export default function ErrorPage() {
             The page you are looking for cannot be found.
           </p>
           <p className="text-[18px] sm:text-[20px] mb-6">
-            But don't worry, we'll get it figured out in no time.
+            But don&apos;t worry, we&apos;ll get it figured out in no time.
           </p>
           <p className="text-[18px] sm:text-[20px] mb-8">
             In the meantime, check out these fresh ideas:

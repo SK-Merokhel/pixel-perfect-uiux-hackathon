@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineLike } from "react-icons/ai";
 import { RiMessage2Line } from "react-icons/ri";
 import { FiShare2 } from "react-icons/fi";
+import Image from "next/image"; // Import Image from next/image
 
 function Blogending() {
   const posts = [
@@ -44,12 +45,13 @@ function Blogending() {
           >
             <div
               className="w-full h-[200px] bg-gray-300 mb-4 flex justify-center items-center text-white text-xl"
-              // Placeholder for images
             >
               {post.imageSrc ? (
-                <img
+                <Image
                   src={post.imageSrc}
                   alt={post.title}
+                  width={500} // Provide width for the image
+                  height={200} // Provide height for the image
                   className="w-full h-full object-cover"
                 />
               ) : (
