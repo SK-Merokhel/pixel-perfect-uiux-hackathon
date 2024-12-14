@@ -1,15 +1,14 @@
 import React from "react";
+import Image from "next/image";
 
+import extra1 from "../../../public/assets/extra1.png";
+import extra2 from "../../../public/assets/extra2.png";
+import extra3 from "../../../public/assets/extra3.png";
+// import extra4 from "../../../public/assets/extra4.png";
+// import extra5 from "../../../public/assets/extra5.png";
+import extra6 from "../../../public/assets/extra6.png";
 
-// 🚫 Image Imports (Commented for Now) 🚫
-// import extra1 from "../assets/extra1.png";
-// import extra2 from "../assets/extra2.png";
-// import extra3 from "../assets/extra3.png";
-// import extra4 from "../assets/extra4.png";
-// import extra5 from "../assets/extra5.png";
-// import extra6 from "../assets/extra6.png";
-
-// import experience from "../assets/30year.png";
+import experience from "../assets/30year.png";
 
 const Home = () => {
   return (
@@ -21,42 +20,42 @@ const Home = () => {
         <div className="w-full md:w-[50%]">
           <div className="grid grid-cols-2 grid-rows-3 gap-2">
             <div className="col-span-2 row-span-1">
-              {/* <Image 
+              <Image 
                 src={extra1} 
                 alt="Tacos" 
                 className="object-cover w-full h-[150px] sm:h-[200px] md:h-[300px] rounded-lg" 
-              /> */}
+              />
             </div>
 
             <div className="col-span-1 row-span-1">
-              {/* <Image 
+              <Image 
                 src={extra2} 
                 alt="Burger" 
                 className="object-cover w-full h-[150px] sm:h-[200px] md:h-[150px] rounded-lg" 
-              /> */}
+              />
             </div>
 
             <div className="col-span-1 row-span-1">
-              {/* <Image 
+              <Image 
                 src={extra3} 
                 alt="Fried Food" 
                 className="object-cover w-full h-[150px] sm:h-[200px] md:h-[150px] rounded-lg" 
-              /> */}
+              />
             </div>
 
             <div className="col-span-2 row-span-1">
-              {/* <Image 
+              <Image 
                 src={extra6} 
                 alt="Burger and Fries" 
                 className="object-cover w-full h-[150px] sm:h-[200px] md:h-[200px] rounded-lg" 
-              /> */}
+              />
             </div>
           </div>
         </div>
 
         {/* Right Section (Text) */}
         <div className="w-full md:w-[50%]">
-          <h3 className="text-[#FF9F0D] text-xl sm:text-2xl mb-4">
+          <h3 className="font-greatVibes text-[#FF9F0D] text-xl sm:text-2xl mb-4">
             Why Choose Us
           </h3>
 

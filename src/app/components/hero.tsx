@@ -9,7 +9,7 @@ function Hero() {
     <section className="bg-black px-3 md:px-[80px] lg:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-[50px]">
       {/* Heading */}
       <div className="text-white w-full md:w-[50%]">
-        <h1 className="text-[20px] md:text-[28px] lg:text-[32px] font-normal text-[#FF9F0D] whitespace-nowrap text-center md:text-left">
+      <h1 className="md:text-[32px] text-[24px] font-normal text-[#FF9F0D] font-greatVibes whitespace-nowrap">
           Its Quick & Amusing!
         </h1>
 
@@ -31,7 +31,6 @@ function Hero() {
 <div className="sm-w-full md:w-[30%] lg:w-[30%] pl-7 justify-center items-center flex flex-row">
   <Image src= {hero_plate} alt="hero_plate" 
   className="w-50 h-auto shadow-md "/>
-
 
 </div>  
     </section>

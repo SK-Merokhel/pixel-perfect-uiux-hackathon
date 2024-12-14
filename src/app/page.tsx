@@ -23,9 +23,9 @@ export default function Home() {
     <AboutUs />
     <FoodCategory />
     <WhyChoseUs />
+    <Items />
     <MenuCom />
     <Ourchefs />
-    <Items />
     {/* <Pics /> */}
     <Testimonials />
     <ActiveRestaurant />

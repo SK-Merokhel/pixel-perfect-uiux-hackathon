@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Helvetica', 'Arial', 'sans-serif'], // Default sans font
+        greatVibes: ['"Great Vibes"', 'cursive'], // Custom font
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -117,7 +117,7 @@ export default function Navbar() {
           />
           <IoSearch className="text-orange-500 ml-2" />
         </div>
-
+z
         {/* Shopping Bag Icon */}
         <div>
           <PiHandbagBold className="text-white text-2xl hover:text-orange-500 transition" />

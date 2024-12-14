@@ -30,10 +30,10 @@ function Blogending() {
     <section className="bg-black md:px-[135px] py-[50px]">
       <div className="flex flex-col justify-center items-center">
         <h1 className="md:text-[32px] text-[24px] font-normal text-[#FF9F0D] font whitespace-nowrap font-greatVibes">
-          Food Category
+          Blog Post
         </h1>
         <h1 className="text-[20px] text-white md:text-[50px] font-bold whitespace-nowrap md:whitespace-normal">
-          <span className="text-[#FF9F0D]">Ch</span>oose Food Item
+          <span className="text-[#FF9F0D]">La</span>test News & Blog
         </h1>
       </div>
 
