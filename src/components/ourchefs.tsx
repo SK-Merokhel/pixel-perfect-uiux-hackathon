@@ -2,10 +2,10 @@ import React from "react";
 
 import Image from "next/image";
 
-import Chefcard1 from  "../../../public/assets/Chefcard1.png"
-import Chefcard2 from  "../../../public/assets/Chefcard2.png"
-import Chefcard3 from  "../../../public/assets/Chefcard3.png"
-import Chefcard4 from  "../../../public/assets/Chefcard4.png"
+import Chefcard1 from  "../../public/assets/Chefcard1.png"
+import Chefcard2 from  "../../public/assets/Chefcard2.png"
+import Chefcard3 from  "../../public/assets/Chefcard3.png"
+import Chefcard4 from  "../../public/assets/Chefcard4.png"
 
  
 function MeetShef() {

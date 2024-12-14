@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import clients from "../../../public/assets/Clients.png";
+import clients from "../../public/assets/Clients.png";
 
 function Items() {
   return (

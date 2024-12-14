@@ -1,9 +1,9 @@
 import React from "react";
 
-import reviewer_dp from "../../../public/assets/reviewer_dp.png"
-import star_rating from "../../../public/assets/star_rating.png"
-import dullstart_rating from "../../../public/assets/dullstart_rating.png"
-import raing_count from "../../../public/assets/raing_count.png"
+import reviewer_dp from "../../public/assets/reviewer_dp.png"
+import star_rating from "../../public/assets/star_rating.png"
+import dullstart_rating from "../../public/assets/dullstart_rating.png"
+import raing_count from "../../public/assets/raing_count.png"
 
 import Image from "next/image";
 

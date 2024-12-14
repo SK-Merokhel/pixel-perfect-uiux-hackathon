@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import footer1 from "../../../public/assets/footer1.png";
-import footer2 from "../../../public/assets/footer2.png";
-import footer3 from "../../../public/assets/footer3.png";
+import footer1 from "../../public/assets/footer1.png";
+import footer2 from "../../public/assets/footer2.png";
+import footer3 from "../../public/assets/footer3.png";
 
 import { PiClockClockwiseBold } from "react-icons/pi";
 import { FaFacebookF } from "react-icons/fa";

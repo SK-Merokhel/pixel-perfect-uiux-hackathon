@@ -1,5 +1,6 @@
 import React from 'react';
-// import Image from "next/image"; // Commented out until the image is available
+import Image from "next/image";
+import menu from "../../public/assets/menu.png";
 
 const menuItems = [
   { name: 'Lettuce Leaf', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu1.png' },
@@ -12,14 +13,13 @@ const menuItems = [
   { name: 'Mushroom Pizza', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu8.png' },
 ];
 
-const MenuCom = () => {
+const MenuComponent = () => {
   return (
     <section className='bg-black px-8 sm:px-16 lg:px-[135px] text-white py-12'>
       <div className="container mx-auto">
-        <h2 className="text-2xl font-bold text-center mb-2">Choose & Pick</h2>
-        <h1 className="text-3xl font-bold text-center mb-8">From Our Menu</h1>
+        <h2 className="text-2xl font-bold text-center mb-2 font-greatVibes text-[#FF9F0D]">Choose & Pick</h2>
+        <h1 className="text-3xl font-bold text-center mb-8"><span className='text-[#FF9F0D]'>Fr</span>om Our Menu</h1>
 
-        {/* Category Filters */}
         <div className="flex justify-center mb-8">
           <ul className="flex flex-wrap justify-evenly space-x-2 sm:space-x-4">
             <li className="cursor-pointer hover:text-yellow-500">Breakfast</li>
@@ -32,25 +32,22 @@ const MenuCom = () => {
           </ul>
         </div>
 
-        {/* Menu Section */}
         <div className='flex flex-col lg:flex-row'>
           {/* Left Section: Decorative Image */}
           <div className="hidden lg:block w-1/3 md:w-[50%]">
-            {/* Image component will work once you have the image in the proper path */}
-            {/* <Image src={menu} alt="Menu Decor" layout="responsive" /> */}
+            <Image src={menu} alt="Menu Decor" layout="responsive" />
           </div>
 
           {/* Right Section: Menu Items */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-grow">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 flex-grow">
             {menuItems.map((item, index) => (
-              <div key={index} className="flex flex-col bg-white rounded-lg overflow-hidden shadow-lg">
-                <div className="w-full h-64 bg-gray-200 flex justify-center items-center">
-                  {/* Commented out Image for now */}
-                  {/* <Image src={item.image} alt={item.name} width={100} height={100} className="object-cover" /> */}
+              <div key={index} className="flex 00 rounded-lg overflow-hidden shadow-lg">
+                <div className="w-1/3 ">
+                  <Image src={item.image} alt={item.name} width={100} height={100} className="object-cover" />
                 </div>
-                <div className="p-4">
+                <div className="p-4 w-2/3">
                   <h1 className="text-lg font-semibold">{item.name}</h1>
-                  <p className="text-sm text-gray-400 mb-2">{item.description}</p>
+                  <p className="text-[11px] text-gray-400 mb-2">{item.description}</p>
                   <h2 className="text-yellow-400 font-bold">{item.price}</h2>
                 </div>
               </div>
@@ -62,4 +59,4 @@ const MenuCom = () => {
   );
 };
 
-export default MenuCom;
+export default MenuComponent;

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from 'next/image';
-import choosepic1 from "../../../public/assets/choosepic1.png"
-import choosepic2 from "../../../public/assets/choosepic2.png"
-import choosepic3 from "../../../public/assets/choosepic3.png"
-import choosepic4 from "../../../public/assets/choosepic4.png"
+import choosepic1 from "../../public/assets/choosepic1.png"
+import choosepic2 from "../../public/assets/choosepic2.png"
+import choosepic3 from "../../public/assets/choosepic3.png"
+import choosepic4 from "../../public/assets/choosepic4.png"
 
 
 function FoodCategory() {

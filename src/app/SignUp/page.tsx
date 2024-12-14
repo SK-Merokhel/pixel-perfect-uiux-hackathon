@@ -1,33 +1,22 @@
 import Link from "next/link";
-import Image from "next/image"; // Import Image from next/image
+
+import { FcGoogle } from "react-icons/fc";
+import { ImAppleinc } from "react-icons/im";
 
 export default function SignUpPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-black text-white">
-        <div className="container mx-auto flex justify-between items-center py-4 px-6">
-          <h1 className="text-2xl font-bold text-yellow-500">FoodTuck</h1>
-          <nav>
-            <ul className="flex space-x-6">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/menu">Menu</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+     
 
       {/* Hero Section */}
       <section
         className="bg-cover bg-center h-64 flex items-center justify-center"
-        style={{ backgroundImage: "url('/public/hero.JPEG')" }}
+        style={{ backgroundImage: "url('/hero.png')" }}
       >
         <div className="text-center text-white">
           <h2 className="text-4xl font-bold">Sign up page</h2>
-          <p>
-            <Link href="/" className="text-yellow-400">Home</Link> › Sign up
+          <p className="mt-[20px]">
+            <Link href="/" className="text-yellow-400">Home</Link> &gt; Sign up
           </p>
         </div>
       </section>
@@ -76,62 +65,20 @@ export default function SignUpPage() {
             </p>
           </form>
           <div className="text-center mt-8">
-            <p>or</p>
+            <hr />
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <Image src="/images/google-icon.png" alt="Google" width={24} height={24} className="h-6 mr-2" />
+            <FcGoogle className="w-[20px] h-[20px] " />
               Sign up with Google
             </button>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <Image src="/images/apple-icon.png" alt="Apple" width={24} height={24} className="h-6 mr-2" />
+              <ImAppleinc className="w-[20px] h-[20px]" />
               Sign up with Apple
             </button>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-black text-white">
-        <div className="container mx-auto py-10 px-6 grid grid-cols-4 gap-8">
-          {/* About Section */}
-          <div>
-            <h4 className="font-bold mb-2">About Us</h4>
-            <p>
-              Corporate clients and leisure travelers rely on FoodTuck for dependable service.
-            </p>
-            <p className="mt-2">Opening Hours: Mon-Sat 9:00 AM - 6:00 PM</p>
-          </div>
-          {/* Links */}
-          <div>
-            <h4 className="font-bold mb-2">Useful Links</h4>
-            <ul>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/menu">Menu</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-            </ul>
-          </div>
-          {/* Help */}
-          <div>
-            <h4 className="font-bold mb-2">Help</h4>
-            <ul>
-              <li><Link href="/faq">FAQ</Link></li>
-              <li><Link href="/support-policy">Support Policy</Link></li>
-              <li><Link href="/privacy">Privacy</Link></li>
-            </ul>
-          </div>
-          {/* Recent Posts */}
-          <div>
-            <h4 className="font-bold mb-2">Recent Posts</h4>
-            <ul>
-              <li>Is fast food good for your body? - Feb 20, 2022</li>
-              <li>Change your food habit - Feb 18, 2022</li>
-              <li>Do you like fast food? - Feb 15, 2022</li>
-            </ul>
-          </div>
-        </div>
-        <p className="text-center py-4">
-          © 2024 FoodTuck. All Rights Reserved.
-        </p>
-      </footer>
+     
     </div>
   );
 }

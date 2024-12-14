@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-import extra1 from "../../../public/assets/extra1.png";
-import extra2 from "../../../public/assets/extra2.png";
-import extra3 from "../../../public/assets/extra3.png";
+import extra1 from "../../public/assets/extra1.png";
+import extra2 from "../../public/assets/extra2.png";
+import extra3 from "../../public/assets/extra3.png";
 // import extra4 from "../../../public/assets/extra4.png";
 // import extra5 from "../../../public/assets/extra5.png";
-import extra6 from "../../../public/assets/extra6.png";
+import extra6 from "../../public/assets/extra6.png";
 
 import experience from "../assets/30year.png";
 
