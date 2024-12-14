@@ -6,8 +6,6 @@ import { IoBagHandle } from "react-icons/io5";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { Sheet, SheetContent, SheetTrigger } from "@/ui/sheet";
 
-import Link from "next/link";
-
 export default function Navbar() {
   const router = useRouter();
 

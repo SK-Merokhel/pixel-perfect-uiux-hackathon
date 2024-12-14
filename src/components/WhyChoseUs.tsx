@@ -8,8 +8,6 @@ import extra3 from "../../public/assets/extra3.png";
 // import extra5 from "../../../public/assets/extra5.png";
 import extra6 from "../../public/assets/extra6.png";
 
-import experience from "../assets/30year.png";
-
 const Home = () => {
   return (
     <>
