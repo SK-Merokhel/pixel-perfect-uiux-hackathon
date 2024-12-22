@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Testimonials from "@/components/testimonals";
+import Testimonials from "@/components/Testimonals";
 
 import { IoPlayOutline } from "react-icons/io5";
 import { PiCoffeeBold, PiStudentDuotone } from "react-icons/pi";

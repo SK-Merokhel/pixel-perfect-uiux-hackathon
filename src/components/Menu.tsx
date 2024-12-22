@@ -92,11 +92,15 @@ const MenuComponent = () => {
               - w-1/3: Assigns 33.33% width to the image container on large screens.
               - md:w-[50%]: On medium screens, sets width to 50%.
             */}
-            <Image src={menu} alt="Menu Decor" layout="responsive" />
-            {/* 
-              - The Image component is used to display the menu decoration image.
-              - layout="responsive": Ensures the image resizes responsively while maintaining its aspect ratio.
-            */}
+            <div className="w-full flex justify-center items-center">
+              <Image 
+                src={menu} 
+                alt="Menu Decor" 
+                width={366} 
+                height={362} 
+                className="w-full md:w-[366px] md:h-[362px] object-contain"
+              />
+            </div>
           </div>
 
           {/* Right Section: Menu Items List */}
