@@ -2,7 +2,7 @@ import React from "react"; // Importing React to enable JSX syntax and component
 import Image from "next/image"; // Importing the Image component from Next.js for optimized image loading.
 import clients from "../../public/assets/Clients.png"; // Importing the image for clients to be displayed in the section.
 
-function Items() {
+function FeaturedItems() {
   return (
     <>
       <section className="relative bg-black w-[1366px] h-[469px]">
@@ -45,4 +45,4 @@ function Items() {
   );
 }
 
-export default Items;
+export default FeaturedItems;

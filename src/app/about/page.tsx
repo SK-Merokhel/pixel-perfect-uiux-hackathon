@@ -67,20 +67,20 @@ export default function About() {
               className="object-cover object-center w-[200px] h-32 md:h-40 rounded-lg" // Responsive width and height
               alt="hero"
               src={Kakab}
-              layout="intrinsic"
+              // layout="intrinsic" // Deprecated
             />
             <div className="md:flex flex-col mt-10 gap-5  space-x-4">
               <Image
                 className="object-cover object-center w-[200px] h-32 md:h-40 rounded-lg"
                 alt="image2"
                 src={bread}
-                layout="intrinsic"
+                // layout="intrinsic" // Deprecated
               />
               <Image
                 className="object-cover object-center w-[200px] h-40 md:h-40 rounded-lg"
                 alt="image3"
                 src={pasta}
-                layout="intrinsic"
+               // layout="intrinsic" // Deprecated
               />
             </div>
           </div>

@@ -1,37 +1,25 @@
-// import Footer from "../components/footer";
-// import Navbar from "../components/navbar";
-// import Header from "../components/header";
-import Hero from "../components/hero";
-import AboutUs from "../components/aboutus";
+import Hero from "../components/Hero";
+import AboutUs from "../components/AboutUs";
 import FoodCategory from "../components/FoodCategory";
-import MenuCom from "../components/menu";
-// import Pics from "./components/items";
-// import WhyChoseUs from "../components/WhyChoseUs";
-import Testimonials from "../components/testimonals";
-import Items from "../components/items";
-import Ourchefs from "../components/ourchefs";
+import MenuComponent from "../components/Menu";
+import Testimonials from "../components/Testimonals";
+import FeaturedItems from "../components/FeaturedItems";
+import OurChefs from "../components/OurChefs";
 import ActiveRestaurant from "../components/ActiveRestaurant";
-import Blogending from "../components/Blogending";
+import BlogEnding from "../components/BlogEnding";
 
 export default function Home() {
   return (
-    <>
     <div>
-    {/* <Header /> */}
-    {/* <Navbar /> */}
-    <Hero />
-    <AboutUs />
-    <FoodCategory />
-    {/* <WhyChoseUs /> */}
-    <Items />
-    <MenuCom />
-    <Ourchefs />
-    {/* <Pics /> */}
-    <Testimonials />
-    <ActiveRestaurant />
-    <Blogending />
-    {/* <Footer /> */}
+      <Hero />
+      <AboutUs />
+      <FoodCategory />
+      <FeaturedItems />
+      <MenuComponent />
+      <OurChefs />
+      <Testimonials />
+      <ActiveRestaurant />
+      <BlogEnding />
     </div>
-    </>
-  )
+  );
 }
