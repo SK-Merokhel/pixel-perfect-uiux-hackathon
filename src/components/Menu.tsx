@@ -1,35 +1,75 @@
-import React from 'react'; // Importing React to enable JSX syntax and component functionality.
+import React from "react"; // Importing React to enable JSX syntax and component functionality.
 import Image from "next/image"; // Importing Next.js Image component for optimized image handling.
 import menu from "../../public/assets/menu.png"; // Importing a menu decoration image used in the left section.
 
 const menuItems = [
-  { name: 'Lettuce Leaf', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu1.png' },
-  { name: 'Fresh Breakfast', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '14.5$', image: '/menu2.png' },
-  { name: 'Mild Butter', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu3.png' },
-  { name: 'Fresh Bread', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu4.png' },
-  { name: 'Glow Cheese', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu5.png' },
-  { name: 'Italian Pizza', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '14.5$', image: '/menu6.png' },
-  { name: 'Slice Beef', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu7.png' },
-  { name: 'Mushroom Pizza', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu8.png' },
+  {
+    name: "Lettuce Leaf",
+    description: "Lacus nisl, et ac dapibus velit in consequat.",
+    price: "12.5$",
+    image: "/menu1.png",
+  },
+  {
+    name: "Fresh Breakfast",
+    description: "Lacus nisl, et ac dapibus velit in consequat.",
+    price: "14.5$",
+    image: "/menu2.png",
+  },
+  {
+    name: "Mild Butter",
+    description: "Lacus nisl, et ac dapibus velit in consequat.",
+    price: "12.5$",
+    image: "/menu3.png",
+  },
+  {
+    name: "Fresh Bread",
+    description: "Lacus nisl, et ac dapibus velit in consequat.",
+    price: "12.5$",
+    image: "/menu4.png",
+  },
+  {
+    name: "Glow Cheese",
+    description: "Lacus nisl, et ac dapibus velit in consequat.",
+    price: "12.5$",
+    image: "/menu5.png",
+  },
+  {
+    name: "Italian Pizza",
+    description: "Lacus nisl, et ac dapibus velit in consequat.",
+    price: "14.5$",
+    image: "/menu6.png",
+  },
+  {
+    name: "Slice Beef",
+    description: "Lacus nisl, et ac dapibus velit in consequat.",
+    price: "12.5$",
+    image: "/menu7.png",
+  },
+  {
+    name: "Mushroom Pizza",
+    description: "Lacus nisl, et ac dapibus velit in consequat.",
+    price: "12.5$",
+    image: "/menu8.png",
+  },
 ];
 // Menu items array holding the data for each item on the menu, including name, description, price, and image.
 
 const MenuComponent = () => {
   return (
-    <section className='bg-black px-8 sm:px-16 lg:px-[135px] text-white py-12'>
+    <section className="bg-black px-8 sm:px-16 lg:px-[135px] text-white py-12">
       {/* 
         - bg-black: Sets the background color of the section to black.
         - px-8 sm:px-16 lg:px-[135px]: Padding for horizontal sides, responsive with screen size.
         - text-white: Sets the text color to white for contrast against the black background.
         - py-12: Adds padding to the top and bottom (48px).
       */}
-      
+
       <div className="container mx-auto">
         {/* 
           - container: Centers and limits the width of the content.
           - mx-auto: Centers the container horizontally within its parent.
         */}
-        
+
         <h2 className="text-2xl font-bold text-center mb-2 font-greatVibes text-[#FF9F0D]">
           Choose & Pick
         </h2>
@@ -43,7 +83,7 @@ const MenuComponent = () => {
         */}
 
         <h1 className="text-3xl font-bold text-center mb-8">
-          <span className='text-[#FF9F0D]'>Fr</span>om Our Menu
+          <span className="text-[#FF9F0D]">Fr</span>om Our Menu
         </h1>
         {/* 
           - text-3xl: Font size for the main heading (48px).
@@ -79,30 +119,22 @@ const MenuComponent = () => {
         </div>
 
         {/* Menu Items Display Section */}
-        <div className='flex flex-col lg:flex-row'>
+        <div className="flex flex-col lg:flex-row">
           {/* 
             - flex-col: Displays content vertically on small screens.
             - lg:flex-row: Switches to a horizontal layout on larger screens (large breakpoint and up).
           */}
-
-          {/* Left Section: Decorative Image */}
-          <div className="hidden lg:block w-1/3 md:w-[50%]">
-            {/* 
-              - hidden lg:block: Hides this section on small screens and shows only on larger screens.
-              - w-1/3: Assigns 33.33% width to the image container on large screens.
-              - md:w-[50%]: On medium screens, sets width to 50%.
-            */}
+          <div className="w-full sm:w-[75%] md:w-[50%] lg:w-1/3">
             <div className="w-full flex justify-center items-center">
-              <Image 
-                src={menu} 
-                alt="Menu Decor" 
-                width={366} 
-                height={362} 
-                className="w-full md:w-[366px] md:h-[362px] object-contain"
+              <Image
+                src={menu}
+                alt="Menu Decor"
+                width={366}
+                height={362}
+                className="w-full h-auto max-w-full sm:w-[300px] sm:h-[300px] md:w-auto md:max-w-[366px] md:h-auto object-contain"
               />
             </div>
           </div>
-
           {/* Right Section: Menu Items List */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 flex-grow">
             {/* 
@@ -116,21 +148,30 @@ const MenuComponent = () => {
 
             {/* Iterating through the menuItems array to display each item */}
             {menuItems.map((item, index) => (
-              <div key={index} className="flex rounded-lg overflow-hidden shadow-lg">
+              <div
+                key={index}
+                className="flex rounded-lg overflow-hidden shadow-lg"
+              >
                 {/* 
                   - flex: Applies flexbox layout for each menu item.
                   - rounded-lg: Applies rounded corners for a smooth visual effect.
                   - overflow-hidden: Hides any content that overflows the container's boundary.
                   - shadow-lg: Adds a large shadow around each menu item to create depth.
                 */}
-                
+
                 {/* Menu Item Image */}
                 <div className="w-1/3">
                   {/* 
                     - w-1/3: Assigns 33.33% width for the image container.
                     - The image is optimized and displayed using Next.js Image component.
                   */}
-                  <Image src={item.image} alt={item.name} width={100} height={100} className="object-cover" />
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    width={100}
+                    height={100}
+                    className="object-cover"
+                  />
                   {/* 
                     - object-cover: Ensures the image covers the available space while maintaining its aspect ratio.
                   */}
@@ -142,7 +183,7 @@ const MenuComponent = () => {
                     - p-4: Padding inside the content container (16px).
                     - w-2/3: Assigns 66.67% width for the text container.
                   */}
-                  
+
                   {/* Item Name */}
                   <h1 className="text-lg font-semibold">{item.name}</h1>
                   {/* 
@@ -151,7 +192,9 @@ const MenuComponent = () => {
                   */}
 
                   {/* Item Description */}
-                  <p className="text-[11px] text-gray-400 mb-2">{item.description}</p>
+                  <p className="text-[11px] text-gray-400 mb-2">
+                    {item.description}
+                  </p>
                   {/* 
                     - text-[11px]: Font size for the description (11px).
                     - text-gray-400: Sets description text color to a light gray.
