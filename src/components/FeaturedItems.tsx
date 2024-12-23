@@ -5,16 +5,17 @@ import clients from "../../public/assets/Clients.png"; // Importing the image fo
 function FeaturedItems() {
   return (
     <>
-      <section className="relative bg-black w-full h-[469px] sm:h-[500px] md:h-[550px] lg:h-[600px]">
+      <section className="relative bg-black w-full h-auto">
         {/* 
           - relative: Positions the section relative to its normal position, allowing for absolute positioning of child elements.
           - bg-black: Sets the background color of the section to black.
           - w-full: Sets the width of the section to 100% of its parent container, making it responsive.
-          - sm:h-[500px], md:h-[550px], lg:h-[600px]: Adjusts the height of the section at different breakpoints (sm, md, lg).
+          - h-auto: Adjusts the height of the section automatically based on its content, minimizing extra space.
+          - py-8 sm:py-10 md:py-12: Adds padding to the top and bottom for all screen sizes, responsive to different screen sizes.
         */}
 
         {/* Content Section */}
-        <div className="relative flex flex-col md:flex-row justify-center items-center gap-5 md:gap-[161px] z-10 px-4 sm:px-8 lg:px-16">
+        <div className="relative flex flex-col md:flex-row justify-center items-center">
           {/* 
             - relative: Applies relative positioning to the container.
             - flex: Applies a flexbox layout to the container.
@@ -22,16 +23,11 @@ function FeaturedItems() {
             - md:flex-row: Changes the layout to row (horizontal) on medium and larger screens.
             - justify-center: Centers the items horizontally.
             - items-center: Centers the items vertically.
-            - gap-5: Adds a 5-unit gap between the elements on small screens.
-            - md:gap-[161px]: Increases the gap to 161px on medium and larger screens.
-            - z-10: Ensures the content stays above other elements if they overlap.
-            - px-4 sm:px-8 lg:px-16: Adds horizontal padding on smaller, medium, and large screens for responsiveness.
           */}
 
-          <div className="relative mt-10">
+          <div className="relative">
             {/* 
               - relative: Applies relative positioning to this div, allowing for absolute positioning of child elements.
-              - mt-10: Adds a margin-top of 10 units to push the content down.
             */}
 
             <Image
