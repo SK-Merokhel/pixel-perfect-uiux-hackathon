@@ -1,97 +1,103 @@
-import React from "react"; // Importing React to enable JSX syntax and component functionality.
-import Image from "next/image"; // Importing the Image component from Next.js for optimized image loading.
+import React from "react";
+import Image from "next/image";
 
-// Importing the experience image for later use
-import experience from "../assets/30year.png";
+import { PiHamburgerLight } from "react-icons/pi";
+import { PiCookieLight } from "react-icons/pi";
+import { GiWineGlass } from "react-icons/gi";
+
+import extra1 from "../../public/assets/extra1.png";
+import extra2 from "../../public/assets/extra2.png";
+import extra3 from "../../public/assets/extra3.png";
+import extra4 from "../../public/assets/extra4.png";
+import extra5 from "../../public/assets/extra5.png";
+import extra6 from "../../public/assets/extra6.png";
 
 const Home = () => {
   return (
     <>
-      {/* Left Section (currently commented out) */}
-      <section className="flex flex-row bg-black px-[135px]">
-        {/* 
-          - flex: Applies flexbox layout to the section, arranging its children (currently left and right sections) in a row.
-          - bg-black: Sets the background color of the section to black.
-          - px-[135px]: Adds horizontal padding of 135px on both sides to provide spacing.
-        */}
-        
-        {/* The commented out grid system with images could be used for a gallery or another section with a 3x4 grid layout. 
-          - This section uses Tailwind's grid classes like grid-rows-3, grid-cols-4, and col-span for arranging the images.
-        */}
-        
-        {/* Right Section */}
-        <div className="bg-black">
-          {/* Container for the content on the right */}
-          <div className="mt-[50px]">
-            {/* Title and Subtitle */}
-            <h3 className="text-[#FF9F0D] text-2xl mb-[35px]">
-              {/* 
-                - text-[#FF9F0D]: Sets the text color to the orange color.
-                - text-2xl: Sets the font size to 2xl.
-                - mb-[35px]: Adds a margin-bottom of 35px to space the elements below.
-              */}
-              Why Choose us
-            </h3>
-            <h1 className="text-white text-6xl font-bold mb-7">
-              {/* 
-                - text-white: Sets the text color to white.
-                - text-6xl: Sets the font size to 6xl.
-                - font-bold: Applies bold font weight.
-                - mb-7: Adds a margin-bottom of 7 units to space the paragraph below.
-              */}
-              <span className="text-[#FF9F0D]">Ex</span>tra ordinary taste
-              <br /> And Experienced{" "}
-            </h1>
-            <p className="text-gray-200 mb-14 text-xl">
-              {/* 
-                - text-gray-200: Sets the text color to a light gray.
-                - mb-14: Adds a margin-bottom of 14 units to space the next section below.
-                - text-xl: Sets the font size to xl.
-              */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              diam
-              <br /> pellentesque bibendum non dui volutpat fringilla bibendum.
-              Urna, elit <br /> augue urna, vitae feugiat pretium donec id
-              elementum. Ultrices mattis <br /> sed vitae mus risus. Lacus nisi,
-              et ac dapibus sit eu velit in <br /> consequat.
-            </p>
-
-            <div className="gap-10 flex mb-5">
-              {/* 
-                - gap-10: Adds a gap of 10 units between the flex items.
-                - flex: Uses flexbox to arrange the child elements in a row by default.
-                - mb-5: Adds a margin-bottom of 5 units to space the next section below.
-              */}
-
-              {/* Food Categories */}
-              <section className="bg-yellow-400 text-white p-12">
-                {/* 
-                  - bg-yellow-400: Sets the background color of the section to yellow.
-                  - text-white: Sets the text color to white for contrast with the yellow background.
-                  - p-12: Adds padding of 12 units on all sides of the section.
-                */}
-                Fast Food
-              </section>
-              <section className="bg-yellow-400 text-white p-12">
-                {/* Lunch category */}
-                Lunch
-              </section>
-              <section className="bg-yellow-400 text-white p-12">
-                {/* Dinner category */}
-                Dinner
-              </section>
-            </div>
-
-            {/* Displaying the Experience image */}
+      <div className="w-full  flex py-[100px] md:py-[100px] md:px-[100px] overflow-hidden px-[20px] bg-black">
+        <div className="xl:block md:hidden sm:hidden hidden lg:hidden">
+          <div className="grid grid-cols-2 grid-row-2 ">
             <Image
-              src={experience} // Uses the imported experience image for displaying.
-              alt="experience" // Provides an alt text for accessibility.
-              width={374} // Specifies the width of the image in pixels.
-              height={93} // Specifies the height of the image in pixels.
-            ></Image>
+              src={extra1}
+              alt=""
+              className="w-[262px] h-[256px] rounded-[6px]"
+            />
+            <Image
+              src={extra2}
+              alt=""
+              className="w-[201px] ml-[-60px] h-[181px] rounded-[6px] mt-[75px]"
+            />
+            <Image
+              src={extra3}
+              alt=""
+              className="w-[144px] h-[206px] rounded-[6px] mt-[15px]"
+            />
+            <Image
+              src={extra4}
+              alt=""
+              className="w-[141px] h-[146px] ml-[-180px] mt-[15px] rounded-[6px]"
+            />
+            <Image
+              src={extra5}
+              alt=""
+              className="w-[101px] h-[106px] rounded-[6px] ml-[300px] mt-[-205px]"
+            />
+            <Image
+              src={extra6}
+              alt=""
+              className="w-[101px] h-[106px] rounded-[6px] ml-[-30px] mt-[-90px]"
+            />
           </div>
         </div>
-      </section>
+
+        <div className="flex flex-col  lg:gap-[90px] ">
+          <div className="flex flex-col justify-between  lg:gap-[20px]">
+            <h1 className="text-[#FF9F0D] font-greatVibes text-[32px] leading-[40px] font-medium">
+              Why Choose us
+            </h1>
+            <h1 className="font-helvetica w-[400px] font-bold lg:text-[40px] text-[30px] leading-[45px] text-white">
+              <span className="text-[#FF9F0D]">Ex</span>ta ordinary taste And
+              Experienced
+            </h1>
+            <p className="font-normal lg:text-[16px]  text-[13px] leading-6 text-[#FFFFFF] w-[280px] lg:w-[480px] lg:h-[48px] ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              diam pellentesque bibendum non dui volutpat fringilla bibendum.
+              Urna, elit augue urna, vitae feugiat pretium donec id elementum.
+              Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit
+              eu velit in consequat.
+            </p>
+          </div>
+          <div className="lg:w-[374px] text-xs lg:h-[135px] h-[90px] flex lg:gap-[20px] gap-3">
+            <h1 className="text-white text-center font-medium">
+              <PiHamburgerLight className=" md:w-[102px] md:h-[100px] h-10 w-10 rounded-[6px] bg-[#FF9F0D] text-white text-center" />
+              Fast Food
+            </h1>
+            <h1 className="text-white text-center font-medium">
+              <PiCookieLight className=" md:w-[102px] md:h-[100px] h-10 w-10 rounded-[6px] bg-[#FF9F0D] text-white text-center" />
+              Lunch
+            </h1>
+            <h1 className="text-white text-center font-medium">
+              <GiWineGlass className="text-xs md:w-[102px] w-10 md:h-[100px] h-10 rounded-[6px] bg-[#FF9F0D] text-white text-center" />
+              Dinner
+            </h1>
+          </div>
+
+          <div className="w-[340px] md:w-[374px]  flex gap-[20px] justify-center items-center md:px-[50px] md:py-[20px] h-[93px] rounded-[6px] bg-white">
+            <div>
+              <h1 className="font-bold leading-[56px] text-[32px] mx:text-[48px] text-[#FF9F0D]">
+                30+
+              </h1>
+            </div>
+            <div>
+              <h1 className="md:text-[20px] text-[16px]">Year of</h1>
+              <h1 className="text-[18px] md:text-[24px] font-bold leading-[32px] text-black">
+                Experienced
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

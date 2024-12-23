@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import FoodCategory from "../components/FoodCategory";
+import Extra from "../components/Extra";
 import MenuComponent from "../components/Menu";
 import Testimonials from "../components/Testimonals";
 import FeaturedItems from "../components/FeaturedItems";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <FoodCategory />
+      <Extra />
       <FeaturedItems />
       <MenuComponent />
       <OurChefs />
